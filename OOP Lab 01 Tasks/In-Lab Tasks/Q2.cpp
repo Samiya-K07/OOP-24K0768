@@ -29,7 +29,7 @@ int main() {
     
     for (int i = 1; i <= counter_01; i++)
     {
-        cout << "Name of participant " << i+1 << ": ";
+        cout << "Name of participant " << i << ": ";
         cin >> event_01[i];
     }
 
@@ -46,7 +46,7 @@ int main() {
     
     for (int i = 1; i <= counter_02; i++)
     {
-        cout << "Name of participant " << i+1 << ": ";
+        cout << "Name of participant " << i << ": ";
         cin >> event_02[i];
     }
     
