@@ -6,14 +6,14 @@
 #include <string>
 using namespace std;
 
-struct Employee
+struct EmployeeDetails
 {
     int work_hours;
     double hourly_rate;
     string name;
 };
 
-void input_employees(Employee* employees, int employees_no)
+void input_employees(EmployeeDetails* employees, int employees_no)
 {
     for (int i = 0; i < employees_no; i++) 
     {
@@ -30,7 +30,7 @@ void input_employees(Employee* employees, int employees_no)
     }
 }
 
-void display_employees(Employee* employees, int employees_no)
+void display_employees(EmployeeDetails* employees, int employees_no)
 {
     cout << "Employee Salary Details: " << endl;
     
@@ -48,7 +48,7 @@ int main() {
     cout << "Enter the number of employees: ";
     cin >> employees_no;
 
-    Employee* employees = new Employee[employees_no];
+    EmployeeDetails* employees = new EmployeeDetails[employees_no];
 
     input_employees(employees, employees_no);
     display_employees(employees, employees_no);
