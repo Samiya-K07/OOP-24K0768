@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-struct Book
+struct BookDetails
 {
     string title;
     string author;
@@ -19,7 +19,7 @@ int main() {
     cout << "Enter the number of books: ";
     cin >> no_of_books;
 
-    Book *books = new Book[no_of_books];
+    BookDetails *books = new BookDetails[no_of_books];
 
     for (int i = 1; i <= no_of_books; i++)
     {
