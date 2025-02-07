@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-struct Student
+struct StudentDetails
 {
     int roll_no;
     float marks[3];
@@ -30,7 +30,7 @@ int main() {
     cout << "Enter the number of students: ";
     cin >> student_count;
 
-    Student* students = new Student[student_count];
+    StudentDetails* students = new StudentDetails[student_count];
 
     for (int i = 0; i < student_count; i++)
     {
